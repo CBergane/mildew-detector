@@ -131,30 +131,26 @@ The application is designed using the Streamlit library. It has a sidebar menu w
 
 - **Page 1: Quick Project Summary**
 This page displays a brief overview of the project requirements and the dataset.
-![](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-summary.png)
+![Summary](images/pp5-mildew-detector-christian.herokuapp.com-summary.png)
 
 - **Page 2: Hypothesis and Visualization**
 This page shows the project hypothesis and how it is validated across the project.
-![](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-hypothesis-visualisation.png)
+![Hypothesis-visualisation](images/pp5-mildew-detector-christian.herokuapp.com-hypothesis-visualisation.png)
  
 - **Page 3: Cherry leaf visualiser**
 This page displays a brief overview of the project requirements and the dataset.
-![](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-leaf-visualiser.png)
+![Leaf-visualiser](images/pp5-mildew-detector-christian.herokuapp.com-leaf-visualiser.png)
  
 - **Page 4: ML Performance Metric**
 Technical information about the model and data are displayed on this page. It shows the:
   * label frequencies of the train, validation and test datasets.
   * training model accuracy and loss charts.
   * generalised performance on the test sets.
-
-  
-![](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-preformance.png)
+![Preformance](images/pp5-mildew-detector-christian.herokuapp.com-preformance.png)
 
 - **Page 5: Mildew Detector**
 This provides the interface for the user to upload test samples and predict whether or not the examples provided are healthy or infested with powdery leaf mildew. It features a *Browse file* button, which the user can use to upload one or more image files. Prediction is only made once the user clicks the *Make Prediction* button. The image is uploaded, and the prediction and report are displayed to the user when the forecast is complete.
-
-
-![](readmeflies/images/pp5-mildew-detector-christian.herokuapp.com-summary.png)
+![Detector](images/pp5-mildew-detector-christian.herokuapp.com-detector.png)
 
 ---
 
