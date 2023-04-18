@@ -1,6 +1,6 @@
 <h1 align=center>Cherry Leaf Mildew Detector</h1>
 
-![](readmefiles/images/amiresponsive.jpeg)
+![amiresponsive](/readmefiles/images/amiresponsive.jpeg)
 
 This website's machine learning technology offers a platform for users to upload photos of cherry leaves and detect whether or not they are healthy or infected with powdery mildew.
 
@@ -29,7 +29,7 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 ---
 | 	healthy											         	|											   	 podwery mildew leaf|
 | ---													     	| ---															  	|
-|<img src="images\healthy.jpg" height='180px'>| <img src="images\powdery-mildew.jpg" height='180px'>|
+|<img src="images/healthy.jpg" height='180px'>| <img src="images/powdery-mildew.jpg" height='180px'>|
 
 
 ## Hypothesis and how to validate?
@@ -88,7 +88,7 @@ The model accuracy on the test dataset is 100% which is the required percentage 
 ## Dashboard Design (Streamlit App User Interface)
 
 ### Dashboard Wireframe
-The dashboard wireframe was created using Balsamiq. The wireframe is in pdf format and can be viewed [here](readmefiles/mildew-detector.pdf)
+The dashboard wireframe was created using Balsamiq. The wireframe is in pdf format and can be viewed [here](/readmefiles/mildew-detector.pdf)
 
 
 ### Page 1: Quick Project Summary
@@ -192,7 +192,7 @@ The Python version in the project is set to 3.8.13, which is not supported by He
 As a result of the above, the app was created from Heroku CLI and set to use buildstack heroku-20.
 
 Steps take to create the app is as follows:
-1. download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if not already installed
+1. Download and install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli) if not already installed
 2. Copy API key from heroku
 	- sign in and click on the avatar icon and select **Account Settings**
 	- Scroll down to the API Key section and click **Reveal** button, and copy key displayed.
