@@ -163,6 +163,8 @@ This provides the interface for the user to upload test samples and predict whet
 
 Upon deployment of my project to Heroku, I encountered an issue with the Image Montage not being displayed. This was due to the exclusion of the directory containing the images from the GitHub push, which was done to address privacy concerns. As such, access to the data is limited to formally involved professionals in the project.
 
+Found that Pylance throws a few errors in places when it can't make out what to do with the code, but it still works.
+    * For an example, Cannot access member "reshape" for type "tuple[Any, Any | Unknown]" Member "reshape" is unknown.
 
 ## Deployment
 Steps I took to setup environment and deploy to Heroku
