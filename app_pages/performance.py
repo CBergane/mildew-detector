@@ -22,7 +22,7 @@ def page_performance_body():
         col1, col2 = st.beta_columns(2)
         with col1:
             model_acc = plt.imread(f'{output_dir}training_and_validation_metrics.png')
-            st.image(model_acc, caption="Model Training And Validation Accuracy")
+            st.image(model_acc, caption="Model Training And Validation Accuracy", width=600)
         st.write('---')
 
     st.write('### Generalised Performance on Test Set')
