@@ -55,7 +55,7 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 * The model success metric is:
     * A study showing how to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
     * The capability to predict if a cherry leaf is healthy or contains powdery mildew.
-    * The model accuracy on test data is 99.88%
+    * The model accuracy on test data is 100%
 
 ---
 
