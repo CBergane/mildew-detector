@@ -39,7 +39,7 @@ def page_summary_body():
         f"The client is interested in the following:\n\n "
         f"* Conducting a study to differentiate a cherry leaf "
         f"that is healthy visually and that contains powdery mildew.\n"
-        f"* predicting if a cherry leaf is healthy or has powdery mildew."
+        f"* Predicting if a cherry leaf is healthy or has powdery mildew."
     )
 
     st.write(
