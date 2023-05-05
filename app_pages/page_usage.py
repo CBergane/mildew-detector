@@ -37,18 +37,18 @@ def page_usage_body():
 
     st.success(
         f"To successfully detect powdery mildew disease, follow these simple steps:"
-        f"1. Easily access the Streamlit dashboard on your web browser."
+        f"1. Easily access the Streamlit dashboard on your web browser.\n"
         f"2. Effortlessly navigate to the Powdery Mildew Detection page "
-        f"by clicking on the tab in the sidebar menu."
+        f"by clicking on the tab in the sidebar menu.\n"
         f"3. Select an image or a batch from your local machine by "
         f"clicking **Browse files,** and upload it without any "
-        f"complications. Or use the drag and drop feature."
+        f"complications. Or use the drag and drop feature.\n"
         f"4. Observe the model's predictions accurately displayed below. "
         f"Analyze the features and metrics as necessary. To see the "
         f"prediction result, locate the predicted class and corresponding "
-        f"confidence score."
+        f"confidence score.\n"
         f"5. If the model appears uncertain, you can confidently make "
-        f"the decision yourself by scrolling through the predictions."
+        f"the decision yourself by scrolling through the predictions.\n"
         f"6. Finally, at the bottom of the page, download a prediction "
         f"report with ease."
     )
