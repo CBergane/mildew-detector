@@ -18,9 +18,9 @@ def page_usage_body():
     st.success(
         f"**Step by step**\n\n"
         f"To study the features of healthy and infected leaves, follow "
-        f"these simple steps and make use of the image montage feature:"
-        f"1. Check the last checkbox labelled **Image Montage.**"
-        f"2. Select the label you want to study from the dropdown menu."
+        f"these simple steps and make use of the image montage feature:\n"
+        f"1. Check the last checkbox labelled **Image Montage.**\n"
+        f"2. Select the label you want to study from the dropdown menu.\n"
         f"3. Click the **Create Montage** button."
     )
 
