@@ -13,7 +13,6 @@ def set_background(image):
         background-size: 18%;
         background-position: top right;
         background-repeat: no-repeat;
-        background-color: rgba(255, 255, 255, 0.5);
     }}
     </style>
     """
