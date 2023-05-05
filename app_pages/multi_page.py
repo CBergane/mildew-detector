@@ -4,11 +4,11 @@ import streamlit as st
 bckgr_img = 'https://png.pngtree.com/png-clipart/20220220/original/pngtree-beautiful-border-with-falling-cherry-blossoms-in-spring-png-image_7272566.png'
 
 # Define CSS style
-def set_background(image):
+def set_background(bckgr_img):
     style = f"""
     <style>
     .stApp {{
-        background-image: url("{image}");
+        background-image: url("{bckgr_img}");
         background-size: 18%;
         background-position: top right;
         background-repeat: no-repeat;
