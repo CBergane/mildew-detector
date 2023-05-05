@@ -9,6 +9,24 @@ from app_pages.mildew_detector import page_mildew_detection_page
 from app_pages.page_usage import page_usage_body
 
 
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://images.unsplash.com/photo-1525006414893-50996169b77d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
+
+
 app = MultiPage(app_name = "Cherry Leaf Mildew Detector")
 
 app.add_page("Quick Project Summary", page_summary_body)
