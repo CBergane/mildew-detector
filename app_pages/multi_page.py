@@ -1,14 +1,23 @@
 import streamlit as st
+import base64
 
 
-bckgr_img = '/workspace/mildew-detector/images/cherry.png'
+@st.bckgr_img
+def get_img_as_base64(file):
+    with open(file, "rb") as f:
+        data = f.read()
+    return base64.b64encode(data).decode()
+
+img =  get_img_as_base64("cherry.png")
+
+bckgr_img = f"""
 
 # Define CSS style
 def set_background(bckgr_img):
     style = f"""
     <style>
     .stApp {{
-        background-image: url("{bckgr_img}");
+        background-image: url("data:image/png;base,{bckgr_img}");
         background-size: 18%;
         background-position: top right;
         background-repeat: no-repeat;
