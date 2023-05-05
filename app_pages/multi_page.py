@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-bckgr_img = 'https://www.kindpng.com/picc/m/37-371135_japanese-flowering-cherry-png-clipart-cherry-blossoms-no.png" alt="Japanese Flowering Cherry Png Clipart - Cherry Blossoms No Background, Transparent Png@kindpng.com'
+bckgr_img = 'https://png.pngtree.com/png-clipart/20220220/original/pngtree-beautiful-border-with-falling-cherry-blossoms-in-spring-png-image_7272566.png'
 
 # Define CSS style
 def set_background(image):
@@ -16,7 +16,7 @@ def set_background(image):
     </style>
     """
     st.markdown(style, unsafe_allow_html=True)
-    
+
 class MultiPage:
 
     def __init__(self, app_name) -> None:
