@@ -6,7 +6,71 @@ This website's machine learning technology offers a platform for users to upload
 
 [Live application can be found here](https://pp5-mildew-detector-christian.herokuapp.com/)
 
+## Table of Contents
+
+1. [Planning Phase](#planning-phase)
+    1. [Agile methodology - Development](#agile-methodology---development)
+    2. [Crisp-DM: Definition and Usage](#crisp-dm-definition-and-usage)
+    3. [Business Requirements](#business-requirements)
+        1. [Project Goals](#project-goals)
+2. [Data Gathering Phase](#data-gathering-phase)
+    1. [Dataset Content](#dataset-content)
+        1. [Sample Leaves](#sample-leaves)
+    2. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+    3. [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+    4. [ML Business Case](#ml-business-case)
+    5. [Data Understanding](#data-understanding)
+3. [Project Execution Phase](#project-execution-phase)
+    1. [Data Preparation](#data-preparation)
+    2. [Modeling](#modeling)
+    3. [Evaluation](#evaluation)
+    4. [Dashboard Design (Streamlit App User Interface)](#dashboard-design-streamlit-app-user-interface)
+        1. [Dashboard Wireframe](#dashboard-wireframe)
+        2. [Page 1: Quick Project Summary](#page-1-quick-project-summary)
+        3. [Page 2: Cherry leaf visualiser](#page-2-cherry-leaf-visualiser)
+        4. [Page 3: Mildew detector](#page-3-mildew-detector)
+        5. [Page 4: Project Hypothesis and Validation](#page-4-project-hypothesis-and-validation)
+        6. [Page 5: ML performance metrics](#page-5-ml-performance-metrics)
+    5. [Features](#features)
+    6. [Bugs and Fixes](#bugs-and-fixes)
+    7. [Deployment](#deployment)
+        1. [Workspace Setup](#workspace-setup)
+        2. [Creating Heroku App](#creating-heroku-app)
+        3. [Deploying to Heroku](#deploying-to-heroku)
+4. [Summary](#summary)
+    1. [Technologies Used](#technologies-used)
+        1. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+        2. [OtherFrameworks, Libraries & Programs Used](#otherframeworks-libraries--programs-used)
+    2. [Credits](#credits)
+        1. [Content](#content)
+        2. [Media](#media)
+    3. [Acknowledgements](#acknowledgements)
+
+---
+
 # Planning Phase
+
+## Agile methodology - Development
+- To ensure my project development stayed on track, I chose to implement a Kanban project to log any issues that arose.
+- You'll find the Kanban Table Project readily available [here.](https://github.com/users/CBergane/projects/8)
+
+![table](readmefiles/images/kanban.jpeg)
+
+---
+
+## Crisp-DM: Definition and Usage
+
+
+- Understand the business problem, objectives, and requirements by pinpointing stakeholders, defining the problem statement, and establishing project goals.
+- Identify data sources and collect and explore data to determine its quality, completeness, and relevance to the project goals.
+- Meticulously prepare the data through cleaning, transformation, and feature engineering.
+- Select the most appropriate modelling technique to develop a model that best addresses the problem, which is subsequently validated and evaluated.
+- Exhaustively evaluate the model to ensure it meets project goals, and carefully analyse and interpret the results.
+- Deploy the model into production through a meticulously planned process that includes implementation and monitoring of its performance.
+
+![crips-dm](readmefiles/images/crisp-dm.png)
+
+---
 
 ## Business Requirements
 The cherry plantation crop from Farmy & Foods faces a challenge where their cherry plantations have been presenting powdery mildew. Currently, the process is to verify if a given cherry tree contains powdery mildew manually. An employee spends around 30 minutes in each tree, taking a few samples of tree leaves and demonstrating visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, the employee applies a specific compound to kill the fungus. The time spent using this compound is 1 minute.  The company has thousands of cherry trees on multiple farms nationwide. As a result, this manual process could be more scalable due to the time spent in the manual process inspection.
@@ -14,10 +78,14 @@ The cherry plantation crop from Farmy & Foods faces a challenge where their cher
 To save time, the IT team suggested an ML system that can detect instantly, using a leaf tree image, if it is healthy or has powdery mildew. A similar manual process is in place for other crops for detecting pests. If this initiative is successful, there is a realistic chance to replicate this project in all other crops. The dataset is a collection of cherry leaf images provided by Farmy & Foods, taken from their crops.
 
 
-### **Project Goal:**
+### **Project Goals**
 
 * 1 - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
 * 2 - The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.
+
+---
+
+# Data Gathering Phase
 
 ## Dataset Content
 
@@ -31,13 +99,17 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 | ---													     	| ---															  	|
 |<img src="images/healthy.jpg" height='180px'>| <img src="images/powdery-mildew.jpg" height='180px'>|
 
+---
 
 ## Hypothesis and how to validate?
 
 * The tree leaves that have powdery mildew contains white streaks on them.
     -  conventional data analysis will be used to conduct a study to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
 
+---
+
 ## Rationale to map the business requirements to the Data Visualizations and ML tasks
+
 * **Business Requirement 1**: Data Visualization
     To visually differentiate healthy and mildew-infested cherry leaves:
 	* As a client, I want to display the "mean" and "standard deviation" images for healthy cherry leaves and cherry leaves that contain powdery mildew.
@@ -65,16 +137,22 @@ The data is labelled image data split into two folders, each representing the im
 
 The classification dataset included 4208 records (2104 healthy leaves and 2104 infected leaves) and was a balanced dataset.
 
+---
+
+# Project Execution Phase
 
 ## Data Preparation
 Minimal data cleaning was required, and the folders were scanned through to delete any non-image files. The dataset was split into the train, test and validation sets to perform model training and avoid model overfitting adequately. The split ratio of the dataset was 0.7, 0.2, and 0.1, respectively.
 Data augmentation was performed using ImageDataGenerator on the training dataset to increase the image data by artificially and temporarily creating training images through the combination of different processes, such as random rotation, shifts, sheared, zoom and rotated images in the computer's short-term memory (RAM). ImageDataGenertor was also used to rescale the test dataset and validation dataset.
+
+---
 
 ## Modeling
 The sequential model used on the training dataset was used to train the model and validated using the validation dataset. 
 
 The model created was used to predict the unseen test dataset, and the Accuracy performance metrics were calculated.
 
+---
 
 ## Evaluation
 The model accuracy on the test dataset is 100% which is the required percentage accuracy. To test further, I uploaded two leaves(healthy and mildew leaves shown under sample data above), which were not part of the dataset, were uploaded and were adequately predicted.
@@ -85,10 +163,14 @@ The model accuracy on the test dataset is 100% which is the required percentage 
 
 ---
 
+
 ## Dashboard Design (Streamlit App User Interface)
 
 ### Dashboard Wireframe
-The dashboard wireframe was created using Balsamiq. The wireframe is in pdf format and can be viewed [here](/readmefiles/mildew-detector.pdf)
+The dashboard wireframe was created using Balsamiq.
+This wireframe is a rough picture of the project's appearance when finished.
+
+![Wireframes](readmefiles/images/pp5-wireframes.png)
 
 
 ### Page 1: Quick Project Summary
@@ -123,6 +205,8 @@ The dashboard wireframe was created using Balsamiq. The wireframe is in pdf form
 
 ### Page 5: ML performance metrics
 * A technical page displaying the model performance
+
+---
 
 ## **Features**
 The application is designed using the Streamlit library. It has a sidebar menu with five navigation links.
@@ -163,8 +247,10 @@ This provides the interface for the user to upload test samples and predict whet
 
 Upon deployment of my project to Heroku, I encountered an issue with the Image Montage not being displayed. This was due to the exclusion of the directory containing the images from the GitHub push, which was done to address privacy concerns. As such, access to the data is limited to formally involved professionals in the project.
 
-Found that Pylance throws a few errors in places when it can't make out what to do with the code, but it still works.
+Found that Pylance throws a few errors in places when it can't make out what to do with the code, but it still works, so the errors are ignored.
     * For an example, Cannot access member "reshape" for type "tuple[Any, Any | Unknown]" Member "reshape" is unknown.
+
+---
 
 ## Deployment
 Steps I took to setup environment and deploy to Heroku
@@ -214,6 +300,9 @@ Steps take to create the app is as follows:
 5. Select the branch you want to deploy, then click Deploy Branch.
 6. The deployment process should happen smoothly in case all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
 
+---
+
+# Summary
 
 ## Technologies Used
 
