@@ -25,7 +25,7 @@ def page_usage_body():
     )
 
     st.info(
-        f"3. **Mildew Detector**"
+        f"3. **Mildew Detector**\n"
         f"You can effortlessly determine whether a cherry leaf has powdery "
         f"mildew disease or not by uploading an image. Simply click on "
         f"the Browse Files button and select an image from your local "
@@ -54,7 +54,8 @@ def page_usage_body():
     )
 
     st.info(
-        f"4. *Project Hypothesies:* The aim of this page is to provide a succinct summary of the "
+        f"4. *Project Hypothesies:*\n"
+        f"The aim of this page is to provide a succinct summary of the "
         f"Machine Learning project and its anticipated outputs. This data "
         f"holds immense significance for stakeholders, business "
         f"proprietors, executives, and managers who rely on the "
@@ -62,7 +63,8 @@ def page_usage_body():
     )
 
     st.info(
-        f"5. *ML Performance Metric* for the machine learning model used in "
+        f"5. *ML Performance Metric:*\n"
+        f"For the machine learning model used in "
         f"the project can be found on this page. Technical staff members "
         f"can explore the model's precision, recall, F1 score, and "
         f"confusion matrix to gain a deeper understanding of its "

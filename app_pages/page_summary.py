@@ -34,7 +34,7 @@ def page_summary_body():
     )
 
     st.info(
-        f"**Objectives\n\n"
+        f"**Objectives:**\n\n"
         f"* This system can accurately determine the health of a cherry "
         f"leaf and detect powdery mildew infections based on an image "
         f"of the leaf."
@@ -44,7 +44,7 @@ def page_summary_body():
     )
 
     st.info(
-        f"**Processes\n\n"
+        f"**Processes:**\n\n"
         f"1. Collect the cherry leaf images dataset provided by Farmy & Foods.\n"
         f"2. Preprocess the images by cleaning, resizing, and "
         f"normalizing them to ensure they are ready for ML algorithms.\n"
