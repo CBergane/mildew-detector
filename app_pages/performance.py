@@ -66,3 +66,51 @@ def page_performance_body():
         f"the model can be considered robust and reliable, and can be used "
         f"with confidence to make predictions on new data."
     )
+
+    st.write('### Confusion Matrix')
+
+    confusion_matrix = plt.imread(f"outputs/{version}/confusion_matrix.png")
+    st.image(confusion_matrix, caption="Confusion Matrix", width=500)
+
+    st.info(
+        f"The matrix is divided into four quadrants: true positives (TP), true "
+        f"negatives (TN), false positives (FP), and false negatives (FN). TP "
+        f"and TN represent accurate predictions, while FP and FN indicate "
+        f"inaccurate predictions. The model's accuracy metric is 100%, "
+        f"meaning that all predictions are correct. However, the loss metric is "
+        f"0.09%, which measures the discrepancy between the predicted and "
+        f"true labels. Despite this slight discrepancy, the model's high "
+        f"accuracy and low loss indicate that it is making precise predictions."
+    )
+
+    classification_report = plt.imread(
+        f"outputs/{version}/classification_report.png")
+    st.image(classification_report, caption='Classification Report')
+
+    st.info(
+        f"Based on the classification report, it seems that the model has "
+        f"performed exceptionally well in terms of precision and recall for "
+        f"both classes. Precision is calculated by dividing the number of true "
+        f"positives by the sum of true and false positives, while recall is "
+        f"determined by dividing the number of true positives by the sum of "
+        f"true positives and false negatives. A high precision score indicates "
+        f"that the model can accurately identify true positives while "
+        f"minimizing false positives. Similarly, a high recall score means that "
+        f"the model can effectively identify true positives while keeping false "
+        f"negatives to a minimum."
+    )
+
+    st.write("### ROC Curve")
+
+    roc_curve = plt.imread(f"outputs/{version}/roc_curve.png")
+    st.image(roc_curve, caption='ROC Curve')
+
+    st.info(
+        f"The model's ROC curve reveals its impressive ability to accurately "
+        f"differentiate between positive and negative samples, with a high "
+        f"true positive rate (sensitivity) and low false positive rate (1 - "
+        f"specificity) across various thresholds. The AUC score of 1.0 "
+        f"confidently demonstrates its exceptional performance in "
+        f"distinguishing between the 'Healthy' and 'Powdery Mildew' classes, "
+        f"with perfect separation between the two."
+    )
