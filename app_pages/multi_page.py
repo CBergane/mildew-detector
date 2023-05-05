@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-bckgr_img = 'https://png.pngtree.com/png-clipart/20220220/original/pngtree-beautiful-border-with-falling-cherry-blossoms-in-spring-png-image_7272566.png'
+bckgr_img = '/workspace/mildew-detector/images/cherry.png'
 
 # Define CSS style
 def set_background(bckgr_img):
