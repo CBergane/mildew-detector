@@ -1,29 +1,34 @@
 import streamlit as st
-import matplotlib.pyplot as plt
-from matplotlib.image import imread
-from src.machine_learning.evaluate import load_test_evaluation
+from app_pages.multi_page import MultiPage
 
-def page_performance_body():
-    version = 'v1'
-    output_dir = f"outputs/{version}/"
+from app_pages.page_summary import page_summary_body
+from app_pages.page_hypothesis import page_hypothesis_body
+from app_pages.leaf_visualiser import page_leaf_visualiser_body
+from app_pages.performance import page_performance_body
+from app_pages.mildew_detector import page_mildew_detection_page
+from app_pages.page_usage import page_usage_body
 
-    st.write("### Train, Validation and Test set: Label Frequencies")
+background_image = 'https://images.unsplash.com/photo-1525006414893-50996169b77d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80'
 
-    labels_distribution = plt.imread(f"{output_dir}img_distribution.png")
-    st.image(labels_distribution,
-             caption="Label Distribution on Train, Validation and Test sets")
-    st.info(f"* The original dataset has a total 2104 images labelled **healthy**"
-            f" and 2104 image files labelled powder_mildew\n\n"
-            f"* The dataset was split into train, validation and test set in the ratio 0.7, 0.2 and 0.1.")
-    st.write('---')
+page_bg_css = '''
+<style>
+body {
+background-image: url("%s");
+background-size: cover;
+}
+</style>
+''' % background_image
 
-    if st.checkbox("Model History"):
-        st.write('### Model History')
-        col1, col2 = st.beta_columns(2)
-        with col1:
-            model_acc = plt.imread(f'{output_dir}training_and_validation_metrics.png')
-            st.image(model_acc, caption="Model Training And Validation Accuracy", width=600)
-        st.write('---')
+app = MultiPage(app_name = "Cherry Leaf Mildew Detector")
 
-    st.write('### Generalised Performance on Test Set')
-    load_test_evaluation(version)
+app.add_page("Quick Project Summary", page_summary_body)
+app.add_page("Project Usage", page_usage_body)
+app.add_page("Project Hypothesis", page_hypothesis_body)
+app.add_page("Cherry Leaf Visualizer", page_leaf_visualiser_body)
+app.add_page("ML Performance Metric", page_performance_body)
+app.add_page("Mildew Detector", page_mildew_detection_page)
+
+st.set_page_config(page_title='My App', page_icon=':smiley:', layout='wide')
+st.markdown(page_bg_css, unsafe_allow_html=True)
+
+app.run()
