@@ -184,27 +184,30 @@ This wireframe is a rough picture of the project's appearance when finished.
         *  The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
         *  The client is interested in predicting if a cherry tree is healthy or contains powdery mildew.
 
-### Page 2: Cherry leaf visualiser
+### Page 2: Project Usage
+* A Page describing the usage of the project.
+* Steb by steb guide on how to use the diferent pages
+
+### Page 3: Cherry leaf visualiser
 * It will answer business requirement 1
     * Lists the findings related to the study to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
     * Checkbox 1 - Difference between average and variability image
     * Checkbox 2 - Differences between Healthy and Powdery Mildew Cherry Leaves
     * Checkbox 3 - Image Montage
 
+### Page 4: Project Hypothesis and Validation
+* Display each project hypothesis and validation
 
-### Page 3: Mildew detector
+### Page 5: ML performance metrics
+* A technical page displaying the model performance
+
+### Page 6: Mildew detector
 * It will answer business requirement 2
     * Link to download a set of cherry leaf images for live prediction
     * File upload widget to upload one or more images for prediction
     * Display image and prediction statement indicating whether or not a cherry leaf contains mildew
     * Display table with the image name and prediction result
     * Download button to download the table
-
-### Page 4: Project Hypothesis and Validation
-* Display each project hypothesis and validation
-
-### Page 5: ML performance metrics
-* A technical page displaying the model performance
 
 ---
 
@@ -218,17 +221,22 @@ This page displays a brief overview of the project requirements and the dataset.
 
 ![Summary](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-summary.png)
 
-- **Page 2: Hypothesis and Visualization**
+- **Page 2: Project Usage**
+This page explains the usege of the diferent pages in the project.
+
+![Hypothesis-visualisation](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-usage.png)
+
+- **Page 3: Hypothesis and Visualization**
 This page shows the project hypothesis and how it is validated across the project.
 
 ![Hypothesis-visualisation](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-hypothesis-visualisation.png)
  
-- **Page 3: Cherry leaf visualiser**
+- **Page 4: Cherry leaf visualiser**
 This page displays a brief overview of the project requirements and the dataset.
 
 ![Leaf-visualiser](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-leaf-visualiser.png)
  
-- **Page 4: ML Performance Metric**
+- **Page 5: ML Performance Metric**
 Technical information about the model and data are displayed on this page. It shows the:
   * label frequencies of the train, validation and test datasets.
   * training model accuracy and loss charts.
@@ -236,7 +244,7 @@ Technical information about the model and data are displayed on this page. It sh
 
 ![Preformance](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-preformance.png)
 
-- **Page 5: Mildew Detector**
+- **Page 6: Mildew Detector**
 This provides the interface for the user to upload test samples and predict whether or not the examples provided are healthy or infested with powdery leaf mildew. It features a *Browse file* button, which the user can use to upload one or more image files. Prediction is only made once the user clicks the *Make Prediction* button. The image is uploaded, and the prediction and report are displayed to the user when the forecast is complete.
 
 ![Detector](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-detector.png)
