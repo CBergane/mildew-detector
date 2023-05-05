@@ -6,10 +6,8 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n\n"
-        f"I wanted to share some important information with "
-        f"fungal infection called powdery mildew? However, manually "
-        f"inspecting the leaves to detect this infection is not practical or "
-        f"efficient for farms with a large number of trees. That's why a "
+        f"Manually inspecting the leaves to detect this infection called powdery mildew "
+        f"is not practical or efficient for farms with a large number of trees. A "
         f"machine learning (ML) system has been proposed to solve this "
         f"problem. This amazing system can quickly analyze an image of "
         f"a cherry leaf and accurately determine if it's healthy or infected "
