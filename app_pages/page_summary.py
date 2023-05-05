@@ -21,7 +21,7 @@ def page_summary_body():
     st.write(
         f"* For additional information on the dataset and data preparation, "
         f"see the [README file]"
-        f"https://github.com/CBergane/mildew-detector/blob/main/README.md")
+        f"(https://github.com/CBergane/mildew-detector/blob/main/README.md)")
 
     st.success(
         f"**Business requirements:**\n"
