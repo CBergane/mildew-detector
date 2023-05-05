@@ -22,7 +22,7 @@ def page_mildew_detection_page():
     btn_predict = st.button("Make Prediction")
     images_buffer = st.file_uploader(
         'Upload Cherry leaf samples. You may select more than one.',
-        type='JPG', accept_multiple_files=True)
+        type=['png', 'jpg'], accept_multiple_files=True)
 
     if btn_predict:
         upload_and_predict(images_buffer)
