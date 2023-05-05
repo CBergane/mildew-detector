@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-bckgr_img = 'https://cdn.imgbin.com/15/15/13/imgbin-cherry-blossom-drawing-painting-european-elements-K7mxyZzJ46Wty0G579SyLMcNW.jpg'
+bckgr_img = 'https://i.pinimg.com/564x/96/f8/80/96f8800ed069252f58d52937c7d92572.jpg'
 
 
 # Define CSS style
@@ -13,6 +13,7 @@ def set_background(image):
         background-size: 18%;
         background-position: top right;
         background-repeat: no-repeat;
+        background-color: rgba(255, 255, 255, 0.5);
     }}
     </style>
     """
