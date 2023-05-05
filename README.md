@@ -186,7 +186,7 @@ This wireframe is a rough picture of the project's appearance when finished.
 
 ### Page 2: Project Usage
 * A Page describing the usage of the project.
-* Steb by steb guide on how to use the diferent pages
+* Step-by-step guide on how to use the different pages.
 
 ### Page 3: Cherry leaf visualiser
 * It will answer business requirement 1
@@ -222,7 +222,7 @@ This page displays a brief overview of the project requirements and the dataset.
 ![Summary](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-summary.png)
 
 - **Page 2: Project Usage**
-This page explains the usege of the diferent pages in the project.
+This page serves to provide a comprehensive explanation of the various project pages and their usage.
 
 ![Hypothesis-visualisation](readmefiles/images/pp5-mildew-detector-christian.herokuapp.com-usage.png)
 
