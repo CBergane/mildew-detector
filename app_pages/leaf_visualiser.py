@@ -21,6 +21,21 @@ def page_leaf_visualiser_body():
         f"The objective here is to visually differentiating a **healthy**"
         f" cherry leaf from that which contains **powdery mildew**."
     )
+    st.warning(
+        f"Powdery mildew can cause cherry leaves to develop a white or "
+        f"greyish powdery coating on their surface. The most noticeable sign "
+        f"of infection is the appearance of white or greyish marks on the "
+        f"leaves, which can take on the form of irregular blotches or spots.\n\n"
+        f"To ensure optimal feature extraction and training when working with "
+        f"image datasets, it is crucial to prepare the images beforehand. This "
+        f"is especially true when analyzing powdery mildew on a leaf, where "
+        f"normalizing the images in the dataset is crucial before training a "
+        f"Neural Network. By calculating the mean and standard deviation of "
+        f"the entire dataset and taking into account the visual properties of "
+        f"the powdery mildew on the leaf, we can enable the machine "
+        f"learning model to accurately and efficiently learn the relevant "
+        f"features from the image data."
+    )
 
     if st.checkbox("Difference between average and variability image"):
         avg_healthy = plt.imread(f"{output_dir}/avg_var_healthy.png")
