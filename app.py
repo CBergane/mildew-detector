@@ -19,6 +19,8 @@ background-size: cover;
 </style>
 ''' % background_image
 
+st.set_page_config(page_title='My App', page_icon=':smiley:', layout='wide')
+
 app = MultiPage(app_name = "Cherry Leaf Mildew Detector")
 
 app.add_page("Quick Project Summary", page_summary_body)
@@ -28,7 +30,6 @@ app.add_page("Cherry Leaf Visualizer", page_leaf_visualiser_body)
 app.add_page("ML Performance Metric", page_performance_body)
 app.add_page("Mildew Detector", page_mildew_detection_page)
 
-st.set_page_config(page_title='My App', page_icon=':smiley:', layout='wide')
 st.markdown(page_bg_css, unsafe_allow_html=True)
 
 app.run()
