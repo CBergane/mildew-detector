@@ -6,42 +6,60 @@ def page_summary_body():
 
     st.info(
         f"**General Information**\n\n"
-        f"Powdery mildew is a fungal disease that affects a wide range of plants. Many different species of fungi "
-        f"cause powdery mildew diseases in the order of Erysipelas. It is one of the more manageable plant diseases to "
-        f"identify, as its symptoms are quite distinctive. Infected plants display white powdery spots on the leaves "
-        f"and stem. The lower leaves are the most affected, but mildew can appear on any above-ground part "
-        f"of the plant. *[Source](https://en.wikipedia.org/wiki/Powdery_mildew)*" 
+        f"I wanted to share some important information with "
+        f"fungal infection called powdery mildew? However, manually "
+        f"inspecting the leaves to detect this infection is not practical or "
+        f"efficient for farms with a large number of trees. That's why a "
+        f"machine learning (ML) system has been proposed to solve this "
+        f"problem. This amazing system can quickly analyze an image of "
+        f"a cherry leaf and accurately determine if it's healthy or infected "
+        f"with powdery mildew. The system was developed using a "
+        f"dataset of cherry leaf images provided by Farmy & Foods’ "
+        f"crops."
         )
-
-    st.info(f"Machine learning functionality on this site can help detect cherry leaves infected "
-            f"with mildew instantly and with an accuracy of over 97%. Thus taking away the "
-            f"manual and time-consuming task of mildew identification on cherry leaves\n\n" 
-    )
-    if st.checkbox("Problem Statement"):
-        st.info(
-            f"* The cherry plantation crop from Farmy & Foods is facing a challenge where their " 
-            f"cherry plantations have been presenting powdery mildew. Currently, the process is "
-            f"to verify if a given cherry tree contains powdery mildew manually."
-            f"\nAn employee spends around 30 minutes in each tree, taking a few samples of tree leaves and" 
-            f"verifying visually if the leaf tree is healthy or has powdery mildew. If it has powdery mildew, "
-            f"the employee applies a specific compound to kill the fungus. The time spent applying "
-            f"this compound is 1 minute. The company has thousands of cherry trees on multiple " 
-            f"farms nationwide. As a result, this manual process is not scalable due to the time "
-            f"spent in the manual process inspection.\n\n"
-            f"**Project Dataset**\n"
-            f"* The client’s crop field dataset contains 4208 images "
-            f"and powdery mildew cherry leaves."
-        )
-
-    st.write("#### Business Requirement")
-    st.success(
-        f"The project has two business requirements:\n\n"
-        f"The client is interested in the following:\n\n "
-        f"* Conducting a study to differentiate a cherry leaf "
-        f"that is healthy visually and that contains powdery mildew.\n"
-        f"* Predicting if a cherry leaf is healthy or has powdery mildew."
-    )
 
     st.write(
-        f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/CBergane/mildew-detector/blob/main/README.md).")
+        f"* For additional information on the dataset and data preparation, "
+        f"see the [README file]"
+        f"https://github.com/CBergane/mildew-detector/blob/main/README.md")
+
+    st.success(
+        f"**Business requirements:**\n"
+        f"* 1 - A study is being planned to differentiate healthy cherry "
+        f"leaves from those infected with powdery mildew.\n"
+        f"* 2 - A quick and accurate method is needed to determine if a "
+        f"cherry tree is healthy or diseased.\n"
+        f"* 3 - The client also desires a dashboard that fulfils these criteria.\n"
+        f"* 4 - Clear explanations of the results are expected by the client.\n"
+    )
+
+    st.info(
+        f"**Objectives\n\n"
+        f"* This system can accurately determine the health of a cherry "
+        f"leaf and detect powdery mildew infections based on an image "
+        f"of the leaf."
+        f"* I believe our solution will greatly improve the detection of "
+        f"powdery mildew on cherry trees in different farms, providing a "
+        f"timely and flexible response."
+    )
+
+    st.info(
+        f"**Processes\n\n"
+        f"1. Collect the cherry leaf images dataset provided by Farmy & Foods.\n"
+        f"2. Preprocess the images by cleaning, resizing, and "
+        f"normalizing them to ensure they are ready for ML algorithms.\n"
+        f"3. Augment the training dataset images to significantly "
+        f"improve the model's performance.\n"
+        f"4. Develop a highly effective supervised ML model, such as "
+        f"Convolutional Neural Networks (CNNs), to accurately classify "
+        f"cherry leaves as healthy or infected with powdery mildew.\n"
+        f"5. Train the model using the preprocessed dataset and validate "
+        f"its performance on a separate test dataset.\n"
+        f"6. Deploy the trained model to a dashboard that displays its "
+        f"predictions and meets the client's requirements.\n"
+        f"7. Conduct a thorough study to visually distinguish between "
+        f"healthy and powdery mildew-infected cherry leaves and "
+        f"predict the health of cherry trees using the deployed model.\n"
+        f"8. Provide the client with a range of possible outcomes and "
+        f"explanations to facilitate informed decision-making."
+    )
