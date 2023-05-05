@@ -1,7 +1,7 @@
 import streamlit as st
 
 
-bckgr_img = 'https://i.imgur.com/Y9PEcSM.png'
+bckgr_img = 'https://img.freepik.com/premium-vector/parts-plants-blooming-branch-pink-with-flowers-green-leaves-black-background_647193-2229.jpg?w=1380'
 
 
 # Define CSS style
