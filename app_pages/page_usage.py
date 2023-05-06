@@ -4,12 +4,27 @@ def page_usage_body():
     st.write("**Here are useful guidelines for your Streamlit dashboard:**")
 
     st.info(
-        f"1. This page summarizes the project, including the dataset, problem "
+        f"1. **Project Summary**\n\n This page summarizes the project, including the dataset, problem "
         f"statement, and methodology used."
     )
 
     st.info(
-        f"2. Compare healthy and powdery mildew-infected cherry leaves with "
+        f"2. **Project Usage\n\n"
+        f"These instructions will guide you through effectively navigating "
+        f"and utilizing the different pages of the project."
+    )
+
+    st.info(
+        f"3. *Project Hypothesies:*\n"
+        f"The aim of this page is to provide a succinct summary of the "
+        f"Machine Learning project and its anticipated outputs. This data "
+        f"holds immense significance for stakeholders, business "
+        f"proprietors, executives, and managers who rely on the "
+        f"project's consequences to make informed strategic decisions."
+    )
+
+    st.info(
+        f"4. **Cherry Leaf Visualizer** \n\nCompare healthy and powdery mildew-infected cherry leaves with "
         f"our accurate visualizer tool. Identify visual markers for the disease "
         f"and assist the model for optimal accuracy through machine learning "
         f"and human supervision."
@@ -24,8 +39,20 @@ def page_usage_body():
         f"3. Click the **Create Montage** button."
     )
 
+        st.info(
+        f"5. *ML Performance Metric:*\n"
+        f"For the machine learning model used in "
+        f"the project can be found on this page. Technical staff members "
+        f"can explore the model's precision, recall, F1 score, and "
+        f"confusion matrix to gain a deeper understanding of its "
+        f"performance. This information is crucial for building and "
+        f"refining the model, and it can also be valuable for other "
+        f"stakeholders seeking to comprehend the technical aspects of "
+        f"the project."
+    )
+
     st.info(
-        f"3. **Mildew Detector**\n"
+        f"6. **Mildew Detector**\n"
         f"You can effortlessly determine whether a cherry leaf has powdery "
         f"mildew disease or not by uploading an image. Simply click on "
         f"the Browse Files button and select an image from your local "
@@ -53,23 +80,5 @@ def page_usage_body():
         f"report with ease."
     )
 
-    st.info(
-        f"4. *Project Hypothesies:*\n"
-        f"The aim of this page is to provide a succinct summary of the "
-        f"Machine Learning project and its anticipated outputs. This data "
-        f"holds immense significance for stakeholders, business "
-        f"proprietors, executives, and managers who rely on the "
-        f"project's consequences to make informed strategic decisions."
-    )
+    
 
-    st.info(
-        f"5. *ML Performance Metric:*\n"
-        f"For the machine learning model used in "
-        f"the project can be found on this page. Technical staff members "
-        f"can explore the model's precision, recall, F1 score, and "
-        f"confusion matrix to gain a deeper understanding of its "
-        f"performance. This information is crucial for building and "
-        f"refining the model, and it can also be valuable for other "
-        f"stakeholders seeking to comprehend the technical aspects of "
-        f"the project."
-    )
