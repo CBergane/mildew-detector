@@ -9,13 +9,13 @@ def page_usage_body():
     )
 
     st.info(
-        f"2. **Project Usage''\n\n"
+        f"2. **Project Usage**\n\n"
         f"These instructions will guide you through effectively navigating "
         f"and utilizing the different pages of the project."
     )
 
     st.info(
-        f"3. **Project Hypothesies:**\n"
+        f"3. **Project Hypothesies:**\n\n"
         f"The aim of this page is to provide a succinct summary of the "
         f"Machine Learning project and its anticipated outputs. This data "
         f"holds immense significance for stakeholders, business "
@@ -40,7 +40,7 @@ def page_usage_body():
     )
 
     st.info(
-        f"5. **ML Performance Metric:**\n"
+        f"5. **ML Performance Metric:**\n\n"
         f"For the machine learning model used in "
         f"the project can be found on this page. Technical staff members "
         f"can explore the model's precision, recall, F1 score, and "
@@ -52,7 +52,7 @@ def page_usage_body():
     )
 
     st.info(
-        f"6. **Mildew Detector**\n"
+        f"6. **Mildew Detector**\n\n"
         f"You can effortlessly determine whether a cherry leaf has powdery "
         f"mildew disease or not by uploading an image. Simply click on "
         f"the Browse Files button and select an image from your local "
