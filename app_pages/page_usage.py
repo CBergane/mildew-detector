@@ -39,7 +39,7 @@ def page_usage_body():
         f"3. Click the **Create Montage** button."
     )
 
-        st.info(
+    st.info(
         f"5. *ML Performance Metric:*\n"
         f"For the machine learning model used in "
         f"the project can be found on this page. Technical staff members "
