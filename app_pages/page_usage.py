@@ -4,7 +4,8 @@ def page_usage_body():
     st.write("**Here are useful guidelines for your Streamlit dashboard:**")
 
     st.info(
-        f"1. **Project Summary**\n\n This page summarizes the project, including the dataset, problem "
+        f"1 **Project Summary**\n\n" 
+        f"This page summarizes the project, including the dataset, problem "
         f"statement, and methodology used."
     )
 
