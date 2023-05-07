@@ -33,7 +33,8 @@ This website's machine learning technology offers a platform for users to upload
         6. [Page 5: ML performance metrics](#page-5-ml-performance-metrics)
     5. [Features](#features)
     6. [Bugs and Fixes](#bugs-and-fixes)
-    7. [Deployment](#deployment)
+    7. [Manual Testing](#manual-testing)
+    8. [Deployment](#deployment)
         1. [Workspace Setup](#workspace-setup)
         2. [Creating Heroku App](#creating-heroku-app)
         3. [Deploying to Heroku](#deploying-to-heroku)
@@ -41,10 +42,10 @@ This website's machine learning technology offers a platform for users to upload
     1. [Technologies Used](#technologies-used)
         1. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
         2. [OtherFrameworks, Libraries & Programs Used](#otherframeworks-libraries--programs-used)
-    2. [Credits](#credits)
-        1. [Content](#content)
-        2. [Media](#media)
-    3. [Acknowledgements](#acknowledgements)
+5. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+6. [Acknowledgements](#acknowledgements)
 
 ---
 
@@ -257,6 +258,23 @@ Upon deployment of my project to Heroku, I encountered an issue with the Image M
 
 Found that Pylance throws a few errors in places when it can't make out what to do with the code, but it still works, so the errors are ignored.
     * For an example, Cannot access member "reshape" for type "tuple[Any, Any | Unknown]" Member "reshape" is unknown.
+
+---
+
+## Manual Testing
+
+| Instructions | Expected Outcome | Results |
+|----|----|----|
+| Open up the project | Upon launching the app, rest assured that it will flawlessly load and promptly guide you to the summary page, free from any errors or interruptions. | Works as expected. |
+| Navigate the summary page | Your overview of the project and problem statement was clear and to the point. The link to the readme file also opened flawlessly. | Works as expected. |
+| Navigate the the Project Usage page | The reader can easily comprehend the project's different sections as they are presented in a clear and concise manner. | Works as expected. |
+| Navigate to the Hypothesis page | The Project Hypothesis and Validations are thoroughly explained to the user and the expected outcome. | Works as expected |
+| Navigate to the Cherry Leaf Visualizer page | The page presents a clear explanation and offers three options, each with a checkbox displayed in front of it. | Works as expected |
+| Check the Difference between average and variability image checkbox | The image is introduced with a concise description, and subsequently displayed on the Jupyter notebook, effectively highlighting the distinction between the average and variability.| Works as expected |
+| Check the Difference between Healthy and Powdery Mildew cherry leaves checkbox | Detailed explanations of the distinguishing factors between healthy leaves and those affected by powdery mildew are provided alongside corresponding images. | Works as expected |
+| Check the Image Montage | You have the option to create a 3 x 3 grid of images featuring either healthy leaves or infected leaves. |
+| Navigate to the ML Performance Metric page | For the project, there are different evaluation tools available such as the evaluation matrix, confusion matrix, precision, recall, F1 score, ROC curve, and model training history. You can access these tools to assess the project. | Works as expected |
+| Natigatte to the Mildew Detector | The platform includes a feature where users can upload an image to determine if it is infected or not. Additionally, there is an option to download the generated report. | Works as expected|
 
 ---
 
