@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def page_hypothesis_body():
-    st.write("### Project Hypothesis One and Validation")
+    st.write("### Project Hypothesis One and validation")
 
     st.success(
         f"Through the utilization of machine learning algorithms, it is feasible "
@@ -15,7 +15,7 @@ def page_hypothesis_body():
     )
     st.info(
         f"The machine learning model effectively differentiated among "
-        f"*various data points and used this knowledge to accurately forecast "
+        f"various data points and used this knowledge to accurately forecast "
         f"outcomes on new data without relying excessively on the training "
         f"set. As a result, the model can offer reliable predictions for future "
         f"observations by generalizing its forecasts. Instead of simply "
