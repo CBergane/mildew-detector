@@ -18,6 +18,11 @@ def page_mildew_detection_page():
     )
     st.write('---')
 
+    st.warning(
+        f"To avoid the accidental onset of Powdery Mildew, it is advisable "
+        f"to use clear images and avoid capturing them in areas with bright "
+        f"sunlight that may cause reflections."
+    )
     st.write('Upload images for prediction and click **Make Prediction** button to see the result.')
     btn_predict = st.button("Make Prediction")
     images_buffer = st.file_uploader(
