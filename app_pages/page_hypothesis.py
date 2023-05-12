@@ -5,13 +5,13 @@ def page_hypothesis_body():
     st.write("### Project Hypothesis One and validation")
 
     st.success(
-        f"Through the utilization of machine learning algorithms, it is feasible "
-        f"to discriminate between cherry leaves that are contaminated with "
-        f"powdery mildew and those that are healthy based on their "
-        f"distinctive visual attributes. In general, cherry leaves that have been "
-        f"affected by powdery mildew display a visible powdery white or "
-        f"greyish coating on their surface, accompanied by prominent white "
-        f"or greyish marks."
+        f"By utilizing advanced machine learning algorithms, it is possible "
+        f"to accurately distinguish between cherry leaves that have been "
+        f"contaminated with powdery mildew and those that are healthy based "
+        f"on their unique visual characteristics. Typically, the leaves that "
+        f"have been infected with powdery mildew will display a visible "
+        f"white or greyish powder-like coating on their surface, as well as "
+        f"distinct white or greyish marks."
     )
     st.info(
         f"The machine learning model effectively differentiated among "
