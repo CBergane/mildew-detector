@@ -13,10 +13,11 @@ This website's machine learning technology offers a platform for users to upload
     2. [Crisp-DM: Definition and Usage](#crisp-dm-definition-and-usage)
     3. [Business Requirements](#business-requirements)
         1. [Project Goals](#project-goals)
+        2. [Hypothesis and validation](#hypothesis-and-validation)
 2. [Data Gathering Phase](#data-gathering-phase)
     1. [Dataset Content](#dataset-content)
         1. [Sample Leaves](#sample-leaves)
-    2. [Hypothesis and how to validate?](#hypothesis-and-how-to-validate)
+    2. [How to validate?](#how-to-validate)
     3. [Rationale to map the business requirements to the Data Visualizations and ML tasks](#rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
     4. [ML Business Case](#ml-business-case)
     5. [Data Understanding](#data-understanding)
@@ -84,6 +85,30 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 * 1 - The client is interested in conducting a study to visually differentiate a cherry leaf that is healthy and that contains powdery mildew.
 * 2 - The client is interested to predict if a cherry leaf is healthy or contains powdery mildew.
 
+### **Hypothesis and Validation**
+
+- **Hypothesis one**
+    - Through the utilization of machine learning algorithms, it is feasible to discriminate between cherry leaves that are contaminated with powdery mildew and those that are healthy based on their distinctive visual attributes. In general, cherry leaves that have been affected by powdery mildew display a visible powdery white or greyish coating on their surface, accompanied by prominent white or greyish marks.
+- **Validation:** <br>
+    The machine learning model effectively differentiated among various data points and used this knowledge to accurately forecast outcomes on new data without relying excessively on the training set. As a result, the model can offer reliable predictions for future observations by generalizing its forecasts. Instead of simply memorizing the correlations between features and labels in the training data, the model comprehends overall patterns, which boosts its predictive capacity. Remarkably, the model achieved a perfect accuracy of 100% in performing these tasks.
+
+- **Hypothesis Two**
+    - Based on the image data it has been trained on, the machine learning system can confidently differentiate between cherry leaves that are healthy and those that have been infected with powdery mildew. Its high level of accuracy, consistently at or above 90%, suggests that this classification task is both straightforward and well-suited to this particular method of analysis.
+- **Validation:** <br>
+    According to the model developed, the hypothesis has been validated with outstanding results in assessing the project's business functionality and triumph. The F1 score and recall for the powdery mildew label both reached an impressive 100%.
+- **Hypothesis Three**
+    - Integrating image visualization into the cherry leaf inspection process greatly minimizes the risk of misidentifying infected leaves.
+- **Validation:** <br>
+    While the ML model is indeed precise in its predictions, it may prove challenging to discern the visual characteristics of the disease during its early stages. However, to further enhance the accuracy of the model and achieve even better results, a staff member examines cases where the model lacks confidence during the prediction process visually. This process involves utilizing an image and a prediction plot in the Powdery Mildew Detection tab.
+- **Hypothesis Four**
+    - Implementing a machine learning solution is the way to go for improving the accuracy and speed of cherry leaf inspection. This will lead to more efficient use of resources, enhanced productivity, and greater worker safety. Furthermore, it will significantly cut down on the time and exposure required for manual cherry leaf inspection.
+- **Validation:** <br>
+    Based on the business case, it's clear that manually inspecting and treating 100 trees would take approximately 50 hours. However, using an ML model to analyse pictures of the leaves takes just a minute per tree. This means that taking pictures and uploading them for analysis would only require an hour and 40 minutes for all 100 trees. With the ML model being 100% accurate in detecting unhealthy trees, there's no longer a need for manual visual inspection.The employee can focus solely on the trees identified by the model as having powdery mildew and administer the appropriate compound. Implementing an ML model would significantly reduce the time needed to inspect and treat 100 trees, making the process much more efficient.
+- **Hypothesis Five**
+    - Through the implementation of ML prediction, the company can significantly reduce its reliance on manual labour for identifying powdery mildew on cherry leaves. This results in substantial cost savings and improved efficiency.
+- **Validation:** <br>
+    To assess the impact of the ML solution, we must compare the manual inspection process before and after implementation. Employee feedback can also provide valuable insight into the effectiveness of the system.
+
 ---
 
 # Data Gathering Phase
@@ -102,7 +127,7 @@ To save time, the IT team suggested an ML system that can detect instantly, usin
 
 ---
 
-## Hypothesis and how to validate?
+## How to validate?
 
 * The tree leaves that have powdery mildew contains white streaks on them.
     -  conventional data analysis will be used to conduct a study to visually differentiate a healthy cherry leaf from one that contains powdery mildew.
