@@ -30,7 +30,7 @@ def page_hypothesis_body():
         f"leaves, you can find the **Cherry Leaf Visualizer** tab."
     )
 
-    st.write("### Hypotesis 2 and validation")
+    st.write("### Hypotesis Two and validation")
 
     st.success(
         f"Based on the image data it has been trained on, the machine "
@@ -53,7 +53,7 @@ def page_hypothesis_body():
         f"kindly refer to the** ML Prediction Metrics** tab."
     )
 
-    st.write("### Hypotesis 3 and validation")
+    st.write("### Hypotesis Three and validation")
 
     st.success(
         f"Integrating image visualization into the cherry leaf inspection "
@@ -75,7 +75,7 @@ def page_hypothesis_body():
         f"please visit the **Mildew Detector**  section."
     )
 
-    st.write("### Hypotesis 4 and validation")
+    st.write("### Hypotesis Four and validation")
 
     st.success(
         f"Implementing a machine learning solution is the way to go for "
@@ -101,7 +101,7 @@ def page_hypothesis_body():
         f"much more efficient."
     )
 
-    st.write("### Hypotesis 5 and validation")
+    st.write("### Hypotesis Five and validation")
 
     st.success(
         f"Through the implementation of ML prediction, the company can "
