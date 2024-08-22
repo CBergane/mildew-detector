@@ -11,7 +11,7 @@ clang==5.0
 click==7.1.2
 cycler==0.12.1
 entrypoints==0.4
-flatbuffers==1.12
+flatbuffers==2.0
 gast==0.4.0
 google-auth==2.34.0
 google-auth-oauthlib==1.0.0
