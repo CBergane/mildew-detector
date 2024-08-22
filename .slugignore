@@ -9,3 +9,9 @@ README.md
 .gitpod.dockerfile
 .gitpod.yml
 app_pages/__pycache__/*
+**/__pycache__/*
+**/*.pyc
+**/*.pyo
+**/*.pyd
+*.sqlite3
+*.log
