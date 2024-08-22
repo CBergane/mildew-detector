@@ -3,7 +3,6 @@ altair==4.2.2
 appdirs==1.4.4
 astor==0.8.1
 astunparse==1.6.3
-backports.zoneinfo==0.2.1
 base58==2.1.1
 blinker==1.8.2
 cachetools==5.3.1
@@ -59,3 +58,4 @@ validators==0.33.0
 watchdog==4.0.2
 Werkzeug==3.0.4
 wrapt==1.14.1
+
