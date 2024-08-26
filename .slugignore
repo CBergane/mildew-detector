@@ -16,3 +16,4 @@ app_pages/__pycache__/*
 *.sqlite3
 *.log
 jupyter_notebooks
+outputs
